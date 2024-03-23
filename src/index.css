@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.unset-all {
+  all: unset;
+}
+
+.custom-stroke {
+  stroke: white;
+}
+
+.custom-fill {
+  fill: black;
+}
+
+.custom-bg {
+  transition: background-color 100ms ease-in-out;
+}
+.custom-bg:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cus-effect:hover > * {
+  animation: squish 0.3s ease-in-out;
+}
+
+@keyframes squish {
+  50% {
+    scale: 1.4 0.6;
+  }
+}
+
+.cus-child {
+  transition: scale 100ms ease-in-out;
+}
+
+.custom-child:hover {
+  scale: 1.2;
+}
+.custom-child > * {
+  stroke: white;
+  fill: black;
+  width: 100%;
+  height: 100%;
+}
